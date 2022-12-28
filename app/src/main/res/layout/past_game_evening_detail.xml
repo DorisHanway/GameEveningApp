@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpcomingGameEveningDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/game_evening_detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/list_game_recommendations"
+            android:layout_width="match_parent"
+            android:layout_height="386dp"
+            android:background="#E3E3E3"
+            android:divider="#E3E3E3"
+            android:dividerHeight="5dp"
+            android:listSelector="#E3E3E3"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rate_food_text"
+                    android:layout_width="163dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/rate_food"
+                    android:textAlignment="textStart" />
+
+                <RatingBar
+                    android:id="@+id/rate_food_bar"
+                    android:layout_width="248dp"
+                    android:layout_height="46dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:stepSize="0.5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rate_host_text"
+                    android:layout_width="163dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/host"
+                    android:textAlignment="textStart" />
+
+                <RatingBar
+                    android:id="@+id/rate_host_bar"
+                    android:layout_width="248dp"
+                    android:layout_height="46dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:stepSize="0.5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rate_evening_text"
+                    android:layout_width="163dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/rate_evening"
+                    android:textAlignment="textStart" />
+
+                <RatingBar
+                    android:id="@+id/rate_evening_bar"
+                    android:layout_width="248dp"
+                    android:layout_height="46dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:scaleX="0.50"
+                    android:scaleY="0.50"
+                    android:stepSize="0.5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSubmitRating"
+                android:text="@string/submit_rating" />
+
+            <Button
+                android:id="@+id/back_to_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBackButtonClicked"
+                android:text="@string/overview" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

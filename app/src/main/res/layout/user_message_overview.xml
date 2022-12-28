@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    tools:context=".activities.GameEveningOverviewActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E3E3E3"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ListView
+            android:id="@+id/user_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="595dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="#E3E3E3"
+            android:dividerHeight="5dp"
+            android:listSelector="#E3E3E3"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <EditText
+                android:id="@+id/enter_message_text"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_rectangle"
+                android:ems="10"
+                android:gravity="center|start"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="onSendMessage"
+                android:scaleX="1.75"
+                android:scaleY="1.75"
+                app:srcCompat="@drawable/ic_send_button" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/return_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onClickHome"
+            android:text="@string/home" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

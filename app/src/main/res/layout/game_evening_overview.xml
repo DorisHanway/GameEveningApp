@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameEveningOverviewActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="690dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/list_overview"
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:layout_marginTop="5dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="#FFFFFF"
+            android:dividerHeight="5dp"
+            android:listSelector="#FFFFFF">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/create_new_appointment_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onCreateNextAppointment"
+            android:text="@string/create_next_appointment" />
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onClickHome"
+            android:text="@string/home" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

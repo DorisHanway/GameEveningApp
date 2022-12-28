@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Die Spielabend-App</string>
+    <string name="game_evening_overview">Spielabend Übersicht</string>
+    <string name="recommend_game">Spielvorschlag eingeben</string>
+    <string name="rate_food">Essen</string>
+    <string name="rate_evening">Allgemein</string>
+    <string name="submit_rating">Bewertungen abgeben</string>
+    <string name="home">Startseite</string>
+    <string name="user_messages">Nachrichten</string>
+    <string name="appointment">Termin</string>
+    <string name="location">Ort</string>
+    <string name="host">Gastgeber:in</string>
+    <string name="create_next_appointment">Nächsten Termin erstellen</string>
+    <string name="placeholder">Platzhalter</string>
+    <string name="overview">Übersichtsseite</string>
+</resources>
