@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Die Spielabend-App</string>
+    <string name="app_name">Spielabend</string>
     <string name="game_evening_overview">Spielabend Übersicht</string>
     <string name="recommend_game">Spielvorschlag eingeben</string>
     <string name="rate_food">Essen</string>
