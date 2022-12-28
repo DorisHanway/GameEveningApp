@@ -51,7 +51,7 @@
                     android:layout_width="163dp"
                     android:layout_height="46dp"
                     android:layout_marginLeft="5dp"
-                    android:gravity="center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text="@string/rate_food"
                     android:textAlignment="textStart" />
 
@@ -78,7 +78,7 @@
                     android:layout_width="163dp"
                     android:layout_height="46dp"
                     android:layout_marginLeft="5dp"
-                    android:gravity="center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text="@string/host"
                     android:textAlignment="textStart" />
 
@@ -105,7 +105,7 @@
                     android:layout_width="163dp"
                     android:layout_height="46dp"
                     android:layout_marginLeft="5dp"
-                    android:gravity="center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text="@string/rate_evening"
                     android:textAlignment="textStart" />
 
