@@ -10,9 +10,10 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
 
         <include
             layout="@layout/game_evening_detail_view"
@@ -22,7 +23,7 @@
         <ListView
             android:id="@+id/list_game_recommendations"
             android:layout_width="match_parent"
-            android:layout_height="520dp"
+            android:layout_height="match_parent"
             android:background="#E3E3E3"
             android:divider="#E3E3E3"
             android:dividerHeight="5dp"
@@ -33,6 +34,17 @@
             android:paddingBottom="5dp">
 
         </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,7 +87,6 @@
             android:layout_marginRight="10dp"
             android:onClick="onBackButtonClicked"
             android:text="@string/overview" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

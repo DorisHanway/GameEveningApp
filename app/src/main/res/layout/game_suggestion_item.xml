@@ -10,33 +10,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingLeft="5dp"
         android:paddingRight="5dp">
 
         <TextView
             android:id="@+id/game_suggestion_name"
-            android:layout_width="221dp"
+            android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="0.60"
             android:gravity="start|center_horizontal|center_vertical"
             android:text="@string/placeholder" />
 
         <TextView
             android:id="@+id/number_of_votes"
-            android:layout_width="146dp"
+            android:layout_width="0dp"
             android:layout_height="45dp"
-            android:layout_weight="1"
+            android:layout_weight="0.3"
             android:gravity="center"
             android:text="0 Upvotes" />
 
         <ImageButton
             android:id="@+id/upvote_game_suggestion"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:backgroundTint="#00FFFFFF"
             android:minWidth="48dp"
             app:srcCompat="@drawable/ic_upvote_possible"

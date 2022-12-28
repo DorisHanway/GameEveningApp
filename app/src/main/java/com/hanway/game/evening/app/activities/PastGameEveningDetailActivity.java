@@ -131,7 +131,8 @@ public class PastGameEveningDetailActivity extends AppCompatActivity {
                                 // Check if the current user already voted
                                 if(rating.userId.equals(currentUser.userId)){
                                     Button submitVote = findViewById(R.id.submit_vote);
-                                    submitVote.setVisibility(View.GONE);
+                                    submitVote.setAlpha(.5f);
+                                    submitVote.setClickable(false);
                                     foodRating.setIsIndicator(true);
                                     hostRating.setIsIndicator(true);
                                     eveningRating.setIsIndicator(true);

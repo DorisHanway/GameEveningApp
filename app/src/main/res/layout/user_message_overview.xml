@@ -8,20 +8,22 @@
     tools:context=".activities.GameEveningOverviewActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#E3E3E3"
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ListView
             android:id="@+id/user_message_list"
             android:layout_width="match_parent"
-            android:layout_height="595dp"
+            android:layout_height="match_parent"
             android:clipChildren="false"
             android:clipToPadding="false"
             android:divider="#E3E3E3"
@@ -29,6 +31,19 @@
             android:listSelector="#E3E3E3"
             android:paddingTop="10dp"
             android:paddingBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,20 +53,21 @@
 
             <EditText
                 android:id="@+id/enter_message_text"
-                android:layout_width="325dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight=".70"
                 android:background="@drawable/rounded_rectangle"
                 android:ems="10"
                 android:gravity="center|start"
                 android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
+                android:paddingLeft="0dp"
                 android:paddingRight="10dp" />
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="127dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight=".10"
                 android:backgroundTint="#00FFFFFF"
                 android:onClick="onSendMessage"
                 android:scaleX="1.75"
@@ -65,6 +81,5 @@
             android:layout_height="50dp"
             android:onClick="onClickHome"
             android:text="@string/home" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
